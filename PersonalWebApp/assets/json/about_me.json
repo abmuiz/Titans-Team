@@ -1,0 +1,10 @@
+[
+    {
+        "header": "Expertise",
+        "data" : ["Mobile App Devlopment with Xamarin","Web App Devlopment with Angular"]
+    },
+    {
+        "header": "Projects",
+        "data" : ["Journey Management Mobile App (eJourney)","Well Services Data Calculation (PowerDrive)"]
+    }
+]
