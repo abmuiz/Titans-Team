@@ -1,0 +1,28 @@
+.form-card
+{
+    padding: 30px;
+    background-color: rgb(242, 240, 245);
+}
+
+.service-main-container
+{
+    padding-top: 80px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.service-right-container
+{
+    padding-top: 40px;
+}
+
+.service-right-container-content
+{
+    text-align: center;
+    margin: auto;
+    /* margin: 0 auto; */
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}

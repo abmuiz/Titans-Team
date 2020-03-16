@@ -1,0 +1,18 @@
+.left-container
+{
+    text-align: center;
+    padding-top: 100px;
+}
+
+.main-container
+{
+    padding-top: 80px;
+}
+
+.home-image
+{
+    height: 400px;
+    width: 400px;
+    display: block;
+    margin: auto;
+}

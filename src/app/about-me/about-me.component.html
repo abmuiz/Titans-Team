@@ -1,0 +1,16 @@
+<div class="about-me-header-container">
+    <h1>About Us</h1>
+</div>
+<div class="container-fluid main-container">
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-4" *ngFor="let dataAll of aboutMeData">
+            <div class="card about-me-card">
+                <div class="card-header">{{dataAll.header}}</div>
+                <div class="card-body">
+                    <p class="card-text" *ngFor="let item of dataAll.data">{{item}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

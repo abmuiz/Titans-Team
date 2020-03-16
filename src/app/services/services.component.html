@@ -1,0 +1,45 @@
+<div class="container-fluid service-main-container">
+    <div class="row">
+        <div class="col-sm-5">
+            <div class="card form-card">
+                <form #f="ngForm" (ngSubmit)="submit(f)">
+                    <div class="alert alert-danger" *ngIf="(!name.valid && name.touched) || (!username.valid && username.touched)">
+                        Please fill required fields
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Name * :</label>
+                            <input required [(ngModel)]="nameProp" #name="ngModel" name="name"  type="text" id="name" (keyup.enter)="log()" class="form-control">
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="">Username * : </label>
+                            <input required [(ngModel)]="userName" #username="ngModel" name="userName" type="text" class="form-control"> 
+                        </div>
+                        <div class="col">
+                            <label for="">Phone No. : </label>
+                            <input appDigitValidation [(ngModel)]="phoneNo" #phone="ngModel" name="phoneNo" maxlength="10" type="text" class="form-control">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="">Services * :</label>
+                        <select required [(ngModel)]="serviceProp" #service="ngModel" name="service" class="form-control">
+                            <option value=""></option>
+                            <option value="0">Mobile App</option>
+                            <option value="1">Web App</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message : </label>
+                        <textarea [(ngModel)]="messageProp" #message="ngModel" name="message" id="message" class="form-control"></textarea>
+                    </div>
+                    <br>
+                    <button [disabled]="f.invalid" class="btn btn-dark btn-block">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-sm-7 service-right-container">
+            <div class="service-right-container-content"><h2>Build Mobile & Web Apps with us</h2></div>
+        </div>
+    </div>
+</div>
